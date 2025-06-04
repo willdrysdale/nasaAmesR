@@ -1,0 +1,10 @@
+Package: nasaAmesR
+Title: Reading and Writing Nasa Ames Files
+Version: 0.0.0.9000
+Authors@R: 
+    person("Will", "Drysdale", , "will.drysdale@york.ac.uk", role = c("aut", "cre"))
+Description: Functions for reading and writing Nasa Ames Files in R.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
