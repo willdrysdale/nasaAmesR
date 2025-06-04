@@ -51,7 +51,7 @@
 #' @author W. S. Drysdale
 #' @export
 
-write_nasa_ames = function(d,
+write_nasa_ames_1001 = function(d,
                            ONAME,
                            ORG,
                            SNAME,
@@ -170,12 +170,11 @@ write_nasa_ames = function(d,
       writeLines(NCOMn[i], con = data_file)
   }
 
-  #suppressWarnings(
-  write.table(d,
-              data_file,
-              append = T,
-              row.names = F,
-              col.names = col.names,
-              quote = F)
-  #  )
+  utils::write.table(d,
+                     data_file,
+                     append = T,
+                     row.names = F,
+                     col.names = col.names,
+                     quote = F)
+
 }

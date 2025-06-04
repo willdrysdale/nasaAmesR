@@ -25,9 +25,9 @@ read_nasa_ames_1001 = function(file,
 
   # If the final line of the special comments contains the column headers, use these
   if(NComm_header){
-    dat = read.table(file, skip = (header_length-1), header = T, ...)
+    dat = utils::read.table(file, skip = (header_length-1), header = T, ...)
   }else{
-    dat = read.table(file, skip = header_length, ...)
+    dat = utils::read.table(file, skip = header_length, ...)
   }
 
   #Return
